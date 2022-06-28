@@ -7,35 +7,33 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style.css" />
   <title>Frontend Mentor | Interactive comments section</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
-
+<body class="container">
   <!-- Pull dynamic content from the data.json file -->
+  <div class="comments__section" role="main"></div>
+    <div class="comments__input-container"></div>
+    <div class="overlay">
+      <div class="modal">
+        <span class="modal__tittle"> Delete comment </span>
+        <span class="modal__text">
+          Are you sure want to delete this comment? This will remove the comment
+          and can't be undone.
+        </span>
+        <button class="modal__btn modal__btn--cancel">NO, CANCEL</button>
+        <button class="modal__btn modal__btn--delete">YES, DELETE</button>
+      </div>
+    </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sean Antwi-Adjei Mensah</a>.
   </div>
 
-  <script>
- jsonData.filter((data) => Object.value(data)[0].username)
-    </script>
+  <script src="main.js"></script>
 </body>
 
 </html>
