@@ -366,8 +366,8 @@
   }
   
   .modal__btn {
-    border: 0;
-    padding: 15px 35px;
+    
+    padding: 15px 50px;
     font-weight: 600;
     font-size: 0.78em;
     background-color: #67727e;
@@ -379,10 +379,14 @@
     cursor: pointer;
     opacity: 0.6;
   }
-  
+  .modal__btn--cancel{
+    border: 1px solid #67727e ;
+  }
   .modal__btn--delete {
     background-color: #ed6468;
+    border: 1px solid #ed6468 ;
   }
+  
   
    @media screen and (max-width: 600px) { 
     .container {
@@ -477,9 +481,10 @@
       width: 345px;
     }
     .modal__btn {
-      padding: 15px 20px;
+      padding: 15px 35px;
       font-size: 0.81em;
     }
+    
     .input__section-main{
     
       width: 100%;
